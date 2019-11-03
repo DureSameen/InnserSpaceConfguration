@@ -15,8 +15,7 @@ namespace InnerSpace.Api.Controllers
 /// </summary>
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Policy = "CustomerOnly")]
-    [Authorize(Policy = "FieldEngineerOnly")]
+    [Authorize(Policy = "CustomerOrFieldEngineerOnly")] 
     public class UserSubscriptionController : ControllerBase
     {
         private readonly IMediator _mediator;
