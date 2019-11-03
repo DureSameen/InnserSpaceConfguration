@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InnerSpace.Domain\InnerSpace.Domain.csproj" />
+    <ProjectReference Include="..\InnerSpace.Infrastructure\InnerSpace.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

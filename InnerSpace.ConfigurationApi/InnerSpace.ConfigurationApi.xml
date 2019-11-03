@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InnerSpace.ConfigurationApi</name>
+    </assembly>
+    <members>
+        <member name="T:InnerSpace.Api.Controllers.ConfigurationController">
+            <summary>
+            Basic configruation management api for admin only
+            </summary>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.ConfigurationController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.ConfigurationController.Get(InnerSpace.Application.Queries.Configuration.ConfigurationDetailQuery)">
+            <summary>
+            retrieve configuration by Id 
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.ConfigurationController.GetList(InnerSpace.Application.Queries.Configuration.ConfigurationsListQuery)">
+            <summary>
+            List of configuration 
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.ConfigurationController.Post(InnerSpace.Domain.Aggregates.ConfigurationAggregate.Commands.CreateConfigurationCommand)">
+            <summary>
+            Add a new configuration
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.ConfigurationController.Put(InnerSpace.Domain.Aggregates.ConfigurationAggregate.Commands.EditConfigurationCommand)">
+            <summary>
+            Edit a configuration
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="T:InnerSpace.Api.Controllers.CustomerSubscriptionsConfigurationsController">
+            <summary>
+            Customer customerSubscriptionConfiguration configurations managed by customers only.
+            </summary>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.CustomerSubscriptionsConfigurationsController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.CustomerSubscriptionsConfigurationsController.Get(InnerSpace.Application.Queries.CustomerSubscriptionsConfigurations.CustomerSubscriptionsConfigurationsDetailQuery)">
+            <summary>
+            Retrieve a customer customerSubscriptionConfiguration configuration by id
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.CustomerSubscriptionsConfigurationsController.GetList(InnerSpace.Application.Queries.Configuration.CustomerSubscriptionsConfigurationsListQuery)">
+            <summary>
+            List of customer customerSubscriptionConfiguration configurations
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.CustomerSubscriptionsConfigurationsController.Post(InnerSpace.Domain.Aggregates.ConfigurationAggregate.Commands.CreateCustomerSubscriptionsConfigurationsCommand)">
+            <summary>
+            Add a new customer customerSubscriptionConfiguration configuration record.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.CustomerSubscriptionsConfigurationsController.Put(InnerSpace.Domain.Aggregates.ConfigurationAggregate.Commands.EditCustomerSubscriptionsConfigurationsCommand)">
+            <summary>
+            Edit a custom customerSubscriptionConfiguration configuration record.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="T:InnerSpace.Api.Controllers.EventLogController">
+            <summary>
+            Eventlogs api for auditor only
+            </summary>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.EventLogController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.EventLogController.Get(InnerSpace.Application.Queries.EventLog.EventLogDetailQuery)">
+            <summary>
+            a log by id
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.EventLogController.GetList(InnerSpace.Application.Queries.EventLog.EventLogsListQuery)">
+            <summary>
+            Log list 
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="T:InnerSpace.Api.Controllers.SubscriptionConfigurationController">
+            <summary>
+            All configurations for a subscription, are saved in this api for admin only.
+            </summary>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.SubscriptionConfigurationController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="T:InnerSpace.Api.Controllers.SubscriptionController">
+            <summary>
+            Different editions of trainings, available as subscription , managed by Admin only
+            </summary>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.SubscriptionController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="T:InnerSpace.Api.Controllers.UserSubscriptionController">
+            <summary>
+            User's Subscription of different available Subscriptions alongwith API key , managed by customers and field engineers.
+            </summary>
+        </member>
+        <member name="M:InnerSpace.Api.Controllers.UserSubscriptionController.#ctor(MediatR.IMediator)">
+            <summary>
+            
+            </summary>
+            <param name="mediator"></param>
+        </member>
+    </members>
+</doc>
