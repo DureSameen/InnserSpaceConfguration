@@ -33,11 +33,11 @@ namespace InnerSpace.IdentityServer.Models
             },
                 new TestUser {
                 SubjectId = "5BE86359-073C-434B-AD2D-A3932222DAB2",
-                Username = "subscription1",
+                Username = "customer1",
                 Password = "password",
                 Claims = new List<Claim> {
-                    new Claim(JwtClaimTypes.Email, "subscription1@innerspace.com"),
-                    new Claim(JwtClaimTypes.Role, "subscription")
+                    new Claim(JwtClaimTypes.Email, "customer1@innerspace.com"),
+                    new Claim(JwtClaimTypes.Role, "customer")
                 }
             }
                 ,

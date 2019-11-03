@@ -57,8 +57,9 @@ namespace InnerSpace.ConfigurationApi
             {
                 options.AddPolicy("AdminOnly", policy => policy.RequireClaim("role", "admin"));
                 options.AddPolicy("FieldEngineerOnly", policy => policy.RequireClaim("role", "fieldEngineer"));
-                options.AddPolicy("CustomerOnly", policy => policy.RequireClaim("role", "subscription"));
+                options.AddPolicy("CustomerOnly", policy => policy.RequireClaim("role", "customer"));
                 options.AddPolicy("AuditorOnly", policy => policy.RequireClaim("role", "auditor"));
+                options.AddPolicy("CustomerOrFieldEngineerOnly", policy => policy.RequireClaim("role", "fieldEngineer", "customer"));
             });
         }
 
